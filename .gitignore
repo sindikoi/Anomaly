@@ -1,0 +1,20 @@
+# תוצרי ריצה שלא עולים לריפו
+outputs/
+logs/
+*.npy
+
+# קבצים אוטומטיים
+__pycache__/
+*.pyc
+
+# תיקיות מערכת או עורך
+.DS_Store
+.idea/
+.vscode/
+
+# פיצ'רים / וידאו כבדים
+i3d-features/
+*.mp4
+*.avi
+*.zip
+

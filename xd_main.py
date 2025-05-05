@@ -1,5 +1,6 @@
 import pdb
 import numpy as np
+import torch
 import torch.utils.data as data
 import utils
 from options import *

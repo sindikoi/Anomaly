@@ -13,7 +13,7 @@ class UCF_crime(data.DataLoader):
         self.modal = modal
         self.num_segments = num_segments
         self.len_feature = len_feature
-        split_path = os.path.join('list','UCF_{}.list'.format(self.mode))
+        split_path = "/mnt/d/UR-DMU/i3d-features/UCF_Test_full.list"
         split_file = open(split_path, 'r')
         self.vid_list = []
         for line in split_file:
