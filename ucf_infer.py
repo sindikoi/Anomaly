@@ -95,15 +95,12 @@ def valid(net, config, test_loader, model_file=None):
         print(f"Classification Accuracy: {accuracy:.4f}")
 
 if __name__ == "__main__":
-    print("[DEBUG] Entered main")
     args = parse_args()
     config = Config(args)
 
-    print("[DEBUG] Creating model")
     net = WSAD(input_size=config.len_feature, flag="Test", a_nums=60, n_nums=60)
     net = net.cuda()
 
-    print("[DEBUG] Creating test loader")
     test_loader = data.DataLoader(
         UCF_crime(
             root_dir=config.root_dir,
